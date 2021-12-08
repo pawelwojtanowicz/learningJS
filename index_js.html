@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js learning</title>
+<script src="myLearningScript.js"></script>
+<link rel="stylesheet" href="styles_js.css">
+<script>
+    function myFunction() {
+        document.getElementById("demo5").innerHTML = "This is text from my function";
+    }
+</script>
+</head> 
+
+<body>
+    <p>
+        <script>
+            document.write(1+2);
+        </script>
+    </p>
+    <p id="demo">We'll change the text after clicking the button.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Ok, it works, huraaaahhh"'>here click here click here click</button>
+    
+    <p id="demo2">An this?</p>
+    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Changed"'>clickk</button>
+    <br>
+    <p id="demo3">Hide it</p>
+    <br>
+    <button type="button" onclick='document.getElementById("demo3").style.display = "none"'>clickk</button>
+    <br>
+    <br>
+    <p id="demo4">Show it</p>
+    <button type="button" onclick='document.getElementById("demo4").style.display = "block"'>clickk</button>
+    
+    <p id="demo5">It will be text from my function</p>
+    <button type="button" onclick="myFunction()">Click it</button>
+
+    <p id="demo6">I wonder if the text will change - from external js file</p>
+    <button type="button" onclick="myFunction2()">Try it</button>
+
+    <button type="button" onclick="myFunction3()">Try it</button>
+    <button type="button" onclick="myFunction4()">Try it</button>
+    <button type="button" onclick="myFunction5()">Try it</button>
+    <button type="button" onclick="myFunction6()">Try it</button>
+
+    <p id="demo7">Addition</p>
+    <button type="button" onclick="myFunction7()">Try it</button>
+    <p id="demo8">Addition?</p>
+    <button type="button" onclick="myFunction8()">Try it</button>
+    <p id="demo9">const PI</p>
+    <button type="button" onclick="myFunction9()">Try it</button>
+    <p id="demo10">car</p>
+    <button type="button" onclick="myFunction10()">Try it</button>
+    
+    <p id="demo11">different types of let</p>
+    <button type="button" style="background-color:aqua;" onclick="myFunction11()">Try it</button>
+
+    <p id="demo12">different types of let</p>
+    <button type="button" style="background-color:darksalmon;" onclick="myFunction12()">Try it</button>
+
+    <p id="demo13">arrays</p>
+    <button type="button" style="background-color:olivedrab;" onclick="myFunction13()">Try it</button>
+
+    <p id="demo14">type of</p>
+    <button type="button" style="background-color:orchid;" onclick="myFunction14()">Try it</button>
+
+    <p id="demo15"> </p>
+    <script> 
+    let func=myFunction15(5, 6);
+    document.getElementById("demo15").innerHTML=func;
+    function myFunction15(p1,p2) {
+        return p1 * p2
+    }
+    </script>
+
+    <p id="demo16">Objects</p>
+    <button type="button" style="background-color:olivedrab;" onclick="myFunction16()">Objects</button>
+
+    <button onclick="this.innerHTML = "something"">From this...</button>
+
+</body>
+</html>
